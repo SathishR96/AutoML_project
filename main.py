@@ -6,8 +6,6 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from sklearn.preprocessing import StandardScaler,MinMaxScaler,RobustScaler,MaxAbsScaler,Normalizer
 from sklearn import preprocessing
-import sklearn
-from sklearn.line
 #from category_encoders.target_encoder import TargetEncoder
 from pandas_profiling import ProfileReport 
 from streamlit_pandas_profiling import st_profile_report
