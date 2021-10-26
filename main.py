@@ -607,5 +607,19 @@ elif page=="Auto ML":
 							bucket=st.selectbox("choose the options",lis)
 							for i in bucket:
 								st.dataframe(i)
+			if upload=="Decision Tree":
+				df=pd.read_excel(uploaded_file)
+				df=df.drop(df.columns[0], axis=1)
+				columns=df.columns
+				target=st.sidebar.selectbox("Choose The columns as Target",columns)
+				if target:
+					if st.sidebar.button('Process Navie Bayes'):
+						y=df[target]
+						x=df
+						st.write("Target")
+						st.dataframe(y)
+						st.dataframe(x)
+						
+		
 		except:
 			pass
