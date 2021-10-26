@@ -4,6 +4,7 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
+import sklearn
 from sklearn.preprocessing import StandardScaler,MinMaxScaler,RobustScaler,MaxAbsScaler,Normalizer
 from sklearn import preprocessing
 #from category_encoders.target_encoder import TargetEncoder
